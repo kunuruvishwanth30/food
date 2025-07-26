@@ -1,0 +1,86 @@
+ body {
+      background-color: #fffaf0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .link{
+    background-color: rgb(13, 249, 13);
+    margin-top: 20px;
+    padding: 10px;
+    width: 180px;
+    border-radius: 15px; 
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+    .menu-banner {
+      background: url('banner.jpg') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .carousel-item {
+      padding: 20px 0;
+    }
+
+    .menu-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.03);
+    }
+
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+      
+    }
+
+    .card-body {
+      position: relative;
+    }
+
+    .price-tag {
+      color: #e67e22;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .add-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: #28a745;
+      border: none;
+      color: white;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-title {
+      margin: 40px 0 20px;
+      text-align: center;
+      font-size: 2rem;
+      color: #d35400;
+    }

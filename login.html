@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form onsubmit="handleLogin(event)">
+      <div class="input-group">
+        <input type="email" id="email" required />
+        <label>Email</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" required />
+        <label>Password</label>
+      </div>
+      <button type="submit">Login</button>
+      <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      const savedPassword = localStorage.getItem(email);
+
+      if (!savedPassword) {
+        alert("User not found. Please register.");
+      } else if (savedPassword !== password) {
+        alert("Incorrect password.");
+      } else {
+        alert("Login successful!");
+        window.location.href = "home.html"; // ✅ redirect to your page
+      }
+    }
+  </script>
+  
+</body>
+</html>

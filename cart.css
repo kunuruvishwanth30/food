@@ -1,0 +1,22 @@
+body {
+      background-color: #f8f9fa;
+    }
+    .cart-container {
+      max-width: 800px;
+      margin: 40px auto;
+    }
+    .cart-item {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .total-box {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .btn-pay {
+      background-color: #28a745;
+      color: white;
+    }

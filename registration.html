@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+
+  <link rel="stylesheet" href="regist.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <div class="link animate__animated animate__zoomIn">
+    <div class="home">
+      <span><i class="fa-solid fa-house"></i></span>
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="link animate__animated animate__zoomIn">
+    <div class="form">
+      <form id="register-form">
+        <h1><i class="fa-solid fa-utensils"></i> Restaurant Form</h1>
+        <hr>
+        <div class="boxes">
+          <div><input type="text" placeholder="Enter Name" required></div>
+          <div><input type="email" id="email" placeholder="Enter E-mail" required></div>
+          <div><input type="password" id="password" placeholder="Enter password" required></div>
+          <div><input type="number" placeholder="Enter phone number" minlength="1" maxlength="10" required></div>
+          <div><input type="text" placeholder="Enter your city"></div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form> 
+    </div>
+  </div>
+
+  <!-- JavaScript to Save Data -->
+  <script>
+    document.getElementById("register-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (localStorage.getItem(email)) {
+        alert("User already registered.");
+      } else {
+        localStorage.setItem(email, password);
+        alert("Registered successfully!");
+
+        // Redirect after registration
+        window.location.href = "login.html"; // change this if your login page has another name
+      }
+    });
+  </script>
+
+</body>
+</html>

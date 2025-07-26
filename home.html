@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="home.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <div class="container">
+         <li class="nav-item ms-3">
+            <a href="#profile" class="nav-link">
+              <img src="/images/restrant logo.jpeg"  alt="Profile" class="profile-img"/>
+            </a>
+          </li>
+      <a class="navbar-brand fs-2 text-warning" href="#">
+        <i class="fa-solid fa-utensils"></i>
+        FOOD DHUNIYA <span class="bg-danger text-white px-2 rounded">Restaurant</span>
+      </a>
+
+      <!-- Toggle Button for Mobile -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#simple-navbar"
+        aria-controls="simple-navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="simple-navbar">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a href="#Home" class="nav-link text-white fs-5">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class="nav-link text-white fs-5">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link text-white fs-5">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a href="#chef" class="nav-link text-white fs-5">CHEFS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link text-white fs-5">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link text-white fs-5">CONTACT</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a href="#profile" class="nav-link">
+              <img src="images/(Upload-from-mobile-1750773807)IMG_20250220_194205.jpg" alt="Profile" class="profile" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div id="img-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#img-slider" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#img-slider" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#img-slider" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#img-slider" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#img-slider" data-bs-slide-to="4"></button>
+  </div>
+
+  <!-- Carousel Inner -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1200">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80" class="d-block w-100 banner-img" alt="Rustic Food">
+    </div>
+    <div class="carousel-item" data-bs-interval="1200">
+      <img src="images/4.jpg" class="d-block w-100 banner-img" alt="Warm Restaurant">
+    </div>
+    <div class="carousel-item" data-bs-interval="1200">
+      <img src="images/5.jpg" class="d-block w-100 banner-img" alt="Ambience">
+    </div>
+    <div class="carousel-item" data-bs-interval="1200">
+      <img src="images/8.jpg" class="d-block w-100 banner-img" alt="Italian Food">
+    </div>
+    <div class="carousel-item" data-bs-interval="1200">
+      <img src="images/chef.jpg" class="d-block w-100 banner-img" alt="Fine Dining">
+    </div>
+  </div>
+
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#img-slider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#img-slider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<section id="About" class="about-section">
+  <div class="container">
+    <h2 class="section-title">About Us</h2>
+    <p class="about-description">
+      Welcome to <strong>Food Dhuniya Restaurant</strong> — a world of flavors, traditions, and passion for food. Since our inception, we’ve been dedicated to serving mouthwatering dishes that blend classic Indian recipes with modern culinary flair.
+    </p>
+    <p>
+      Whether you're here for a family dinner, a friendly hangout, or a romantic evening, our chefs bring you freshly prepared meals using handpicked ingredients and authentic spices. From crispy starters to rich curries, sizzling tandoori, and delightful desserts — we promise an unforgettable dining experience.
+    </p>
+    <p>
+      At Food Dhuniya, hospitality is at the heart of everything we do. We believe in treating our guests like family and ensuring every visit feels like home.
+    </p>
+    <p class="signature">
+      🍽️ Come taste the world — only at <strong>Food Dhuniya</strong>.
+    </p>
+  </div>
+</section>
+<!-- Chef Carousel Section -->
+<section class="bg-light py-5" id="chef">
+  <div class="container">
+    <h2 class="text-center mb-5">👨‍🍳 Meet Our Chefs</h2>
+
+    <div id="chefCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row text-center justify-content-center">
+            <div class="col-md-4">
+              <img src="images/ramesh.jpg" class="chef-img" alt="Chef Ramesh">
+              <h5 class="mt-2">Chef Ramesh</h5>
+              <p class="text-muted">South Indian Specialist</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/priya.jpg" class="chef-img" alt="Chef Priya">
+              <h5 class="mt-2">Chef Priya</h5>
+              <p class="text-muted">Modern Snacks Expert</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/ahmed.jpg" class="chef-img" alt="Chef Ahmed">
+              <h5 class="mt-2">Chef Ahmed</h5>
+              <p class="text-muted">Biryani & Mughlai Pro</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row text-center justify-content-center">
+            <div class="col-md-4">
+              <img src="images/latha.jpg" class="chef-img" alt="Chef Latha">
+              <h5 class="mt-2">Chef Latha</h5>
+              <p class="text-muted">Dessert Specialist</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/raj1.jpg" class="chef-img" alt="Chef Raj">
+              <h5 class="mt-2">Chef Raj</h5>
+              <p class="text-muted">North Indian Master</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/anjali.jpg" class="chef-img" alt="Chef Anjali">
+              <h5 class="mt-2">Chef Anjali</h5>
+              <p class="text-muted">Continental Queen</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#chefCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#chefCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Gallery Section -->
+<!-- Inner Design Gallery Section -->
+<section class="py-5 bg-white"id="gallery">
+  <div class="container">
+    <h2 class="text-center mb-5"> Our Restaurant Interiors</h2>
+    
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="images/dinning.jpg" class="img-fluid rounded shadow-sm" alt="Dining Area">
+        <h6 class="mt-2 text-center">Elegant Dining Area</h6>
+      </div>
+      
+      <div class="col-md-4">
+        <img src="images/set.jpg" class="img-fluid rounded shadow-sm" alt="Seating">
+        <h6 class="mt-2 text-center">Cozy Seating Arrangement</h6>
+      </div>
+
+      <div class="col-md-4">
+        <img src="images/countercash.jpg" class="img-fluid rounded shadow-sm" alt="Seating">
+        <h6 class="mt-2 text-center">Reception Counter</h6>
+      </div>
+      
+      <div class="col-md-4">
+        <img src="images/lighting.jpg" class="img-fluid rounded shadow-sm" alt="Ambiance">
+        <h6 class="mt-2 text-center">Warm Lighting Ambiance</h6>
+      </div>
+      
+      <div class="col-md-4">
+        <img src="images/wall.jpg" class="img-fluid rounded shadow-sm" alt="Wall Art">
+        <h6 class="mt-2 text-center">Artistic Wall Decor</h6>
+      </div>
+      
+      <div class="col-md-4">
+        <img src="images/cheflive.jpg" class="img-fluid rounded shadow-sm" alt="Chef's Corner">
+        <h6 class="mt-2 text-center">Chef’s Live Counter</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-4 mt-5">
+  <div class="container">
+
+    <!-- Top Row -->
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h5>🍽️ Food Dhuniya</h5>
+        <p>Delicious meals, fresh ingredients, and cozy ambiance. Your favorite stop for veg, non-veg, snacks, and more!</p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="menu.html" class="text-white text-decoration-none">Menu</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact Us</h5>
+        <p>Email: info@fooddhuniya.com</p>
+        <p>Phone: +91 93478 855118</p>
+        <p>Hyderabad, India</p>
+      </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="text-center mb-4">
+      <a href="#" class="social-icon bg-white me-2"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#" class="social-icon bg-white me-2"><img src="insta.png" alt="Instagram"></a>
+      <a href="#" class="social-icon bg-white me-2"><img src="twitter.png" alt="Twitter"></a>
+      <a href="#" class="social-icon bg-white me-2"><img src="whatsapp.png" alt="WhatsApp"></a>
+      <a href="#" class="social-icon bg-white"><img src="youtube.png" alt="YouTube"></a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center border-top pt-3">
+      <p class="mb-0">&copy; 2025 Food Dhuniya Restaurant. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* style.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffefc;
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand i {
+  color: #ffc107;
+}
+
+/* Profile Image in Navbar */
+.profile,
+.profile-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #eceff1;
+  transition: 0.3s;
+  margin-top: -15px;
+  margin-right: 13px;
+}
+
+.profile:hover,
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar Links */
+.nav-link {
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .profile,
+  .profile-img {
+    margin: auto;
+  }
+}
+  .banner-img{
+   width: 100%;
+   height: auto;
+   max-height: 500px;
+   object-fit: cover;
+   
+}
+
+.head::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.about-section {
+  background-color: #fef8ec;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #d35400;
+  margin-bottom: 20px;
+}
+
+.about-description, .about-section p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.signature {
+  font-style: italic;
+  font-weight: bold;
+  color: #e67e22;
+  margin-top: 30px;
+}
+.chef-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+.social-icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 8px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: #ffc107; /* golden hover color */
+}

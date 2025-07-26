@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="link ">
+    <span><h1>
+       <i class="fa-solid fa-house"></i>
+    </span>
+    <a href="home.html">Home</a>
+    </h1>
+    </div>
+    <div class="menu-banner">Food Dhuniya Menu</div>
+ <div class="container">
+    <!--breakfast-->
+    <h2 class="section-title"> Tiffins Items</h2>
+    <div id="tifCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/idli.jpg" class="card-img-top" alt="Paneer Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Idli Sambar</h5>
+                  <p class="price-tag">₹50</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Idli Sambar', 50, -1)">–</button>
+        <span id="Idli-Sambar-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Idli Sambar', 50, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card menu-card">
+                <img src="images/masaladosa.jpg" class="card-img-top" alt="Masala Dosa">
+                     <div class="card-body">
+                      <h5 class="card-title">Masala Dosa</h5>
+                              <p class="price-tag">₹60</p>
+      <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Masala Dosa', 60, -1)">–</button>
+      <span id="Masala-Dosa-qty" class="me-2">0</span>
+      <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Masala Dosa', 60, 1)">+</button>
+                </div>
+                   </div>
+                          </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/onion uttapam.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Onion Uttapam</h5>
+                  <p class="price-tag">₹80</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Onion Uttapam', 80, -1)">–</button>
+        <span id="Onion-Uttapam-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Onion Uttapam', 80, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/pori.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Pori</h5>
+                  <p class="price-tag">₹40</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Pori', 40, -1)">–</button>
+        <span id="Pori-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Pori', 40, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/chapati.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Chapati</h5>
+                  <p class="price-tag">₹40</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Chapati', 40, -1)">–</button>
+        <span id="Chapati-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Chapati', 40, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/buttermasaldosa.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">ButterMasala Dosa</h5>
+                  <p class="price-tag">₹70</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('ButterMasala Dosa', 70, -1)">–</button>
+        <span id="ButterMasala-Dosa-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('ButterMasala Dosa', 70, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/parota.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Parota</h5>
+                  <p class="price-tag">₹60</p>
+                 <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Parota', 60, -1)">–</button>
+        <span id="Parota-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Parota', 60, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/poha.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Poha</h5>
+                  <p class="price-tag">₹40</p>
+                 <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Poha', 40, -1)">–</button>
+        <span id="Poha-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Poha', 40, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/ravaidli.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Rava Idli</h5>
+                  <p class="price-tag">₹80</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Rava Idli', 80, -1)">–</button>
+        <span id="Rava-Idli-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Rava Idli', 80, 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more .carousel-item blocks if needed -->
+      </div>
+    </div>
+    <!-- Veg Carousel -->
+    <h2 class="section-title"> Veg Items</h2>
+    <div id="vegCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/vegbiryani.jpg" class="card-img-top" alt="Paneer Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Paneer Biryani</h5>
+                  <p class="price-tag">₹220</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Paneer Biryani', 220, -1)">–</button>
+        <span id="Paneer-Biryani-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Paneer Biryani', 220, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/pannerbiryani.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Veg Biryani</h5>
+                  <p class="price-tag">₹150</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Veg Biryani', 150, -1)">–</button>
+        <span id="Veg-Biryani-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Veg Biryani', 150, 1)">+</button>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/mushroombiryani.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Mushroom Biryani</h5>
+                  <p class="price-tag">₹250</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Mushroom Biryani', 250, -1)">–</button>
+        <span id="Mushroom-Biryani-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Mushroom Biryani', 250, 1)">+</button>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/pannerreceipe.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Panner Recepie</h5>
+                  <p class="price-tag">₹150</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Panner Recepie', 150, -1)">–</button>
+        <span id="Panner-Recepie-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Panner Recepie', 150, 1)">+</button>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/vegmanchurian.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Veg Manchurian</h5>
+                  <p class="price-tag">₹180</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Veg Manchurian', 180, -1)">–</button>
+        <span id="Veg-Manchurian-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Veg Manchurian', 180, 1)">+</button>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/friedrice.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Fried Rice</h5>
+                  <p class="price-tag">₹150</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Fried Rice', 150, -1)">–</button>
+        <span id="Fried-Rice-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Fried Rice', 150, 1)">+</button>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/vegnoddles.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Veg Noddles</h5>
+                  <p class="price-tag">₹180</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Veg Noddles', 180, -1)">–</button>
+        <span id="Veg-Noddles-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Veg Noddles', 180, 1)">+</button>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/jeerarice.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Jerra Rice</h5>
+                  <p class="price-tag">₹150</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Jerra Rice', 150, -1)">–</button>
+        <span id="Jerra-Rice-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Jerra Rice', 150, 1)">+</button>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/tomatorice.jpg" class="card-img-top" alt="Veg Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">Tomato Rice</h5>
+                  <p class="price-tag">₹150</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Tomato Rice', 150, -1)">–</button>
+        <span id="Tomato-Rice-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Tomato Rice', 150, 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+<h2 class="section-title"> Non-Veg Items</h2>
+    <div id="nonVegCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/chickentikkabiryani.jpg" class="card-img-top" alt="Chicken Biryani">
+                <div class="card-body">
+                  <h5 class="card-title">ChickenTikka Biryani</h5>
+                  <p class="price-tag">₹300</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('ChickenTikka Biryani', 300, -1)">-</button>
+        <span id="ChickenTikka-Biryani-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('ChickenTikka Biryani', 300, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/chemmen.jpg" class="card-img-top" alt="Fish Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Chemmen</h5>
+                  <p class="price-tag">₹200</p>
+                <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Chemmen', 200, -1)">-</button>
+        <span id="Chemmen-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Chemmen', 200, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/eggbiryani.jpg" class="card-img-top" alt="Fish Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Egg Biryani</h5>
+                  <p class="price-tag">₹250</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Egg Biryani', 250,-1)">-</button>
+        <span id="Egg-Biryani-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Egg Biryani', 250, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/eggsoul.jpg" class="card-img-top" alt="Fish Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Egg Soul</h5>
+                  <p class="price-tag">₹200</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Egg Soul', 200, -1)">-</button>
+        <span id="Egg-Soul-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Egg Soul', 200, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/frishfry.jpg" class="card-img-top" alt="Fish Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Frish Fry</h5>
+                  <p class="price-tag">₹220</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Frish Fry', 220, -1)">-</button>
+        <span id="Frish-Fry-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Frish Fry', 220, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/muttonbiryani.jpg" class="card-img-top" alt="Fish Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Mutton Biryani</h5>
+                  <p class="price-tag">₹350</p>
+                <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Mutton Biryani', 350, -1)">-</button>
+        <span id="Mutton-Biryani-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Mutton Biryani', 350, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/muttonfry.jpg" class="card-img-top" alt="Fish Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Mutton Fry</h5>
+                  <p class="price-tag">₹250</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Mutton Fry', 250, -1)">-</button>
+        <span id="Mutton-Fry-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Mutton Fry', 250, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/tandoorichicken.jpg" class="card-img-top" alt="Fish Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Tandoori Chicken</h5>
+                  <p class="price-tag">₹200</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Tandoori Chicken', 200, -1)">-</button>
+        <span id="Tandoori-Chicken-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Tandoori Chicken', 200, 1)">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card menu-card">
+                <img src="images/wholetandoori.jpg" class="card-img-top" alt="Fish Curry">
+                <div class="card-body">
+                  <h5 class="card-title">Whole TandooriChicken</h5>
+                  <p class="price-tag">₹400</p>
+                  <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Whole TandooriChicken', 400, -1)">-</button>
+        <span id="Whole-TandooriChicken-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Whole TandooriChicken', 400, 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Tea Section -->
+    <h2 class="section-title"> Tea & Beverages</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/badammilk.jpg" class="card-img-top" alt="Tea">
+          <div class="card-body">
+            <h5 class="card-title">Badam Milk</h5>
+            <p class="price-tag">₹80</p>
+           <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Badam Milk', 80, -1)">-</button>
+        <span id="Badam-Milk-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Badam Milk', 80, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/coffee.jpg" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Coffee</h5>
+            <p class="price-tag">₹25</p>
+            <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Coffee', 25, -1)">-</button>
+        <span id="Coffee-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Coffee', 25, 1)">+</button>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/chocolateshake.jpg" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Shake</h5>
+            <p class="price-tag">₹85</p>
+      <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Chocolate Shake', 85, -1)">-</button>
+        <span id="Chocolate-Shake-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Chocolate Shake', 85, 1)">+</button>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/gingerlemon.jpg" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Ginger Lemon</h5>
+            <p class="price-tag">₹30</p>
+          <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Ginger Lemon', 30, -1)">-</button>
+        <span id="Ginger-Lemon-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Ginger Lemon', 30, 1)">+</button>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/greentea.jpg" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Green Tea</h5>
+            <p class="price-tag">₹35</p>
+         <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Green Tea', 35, -1)">-</button>
+        <span id="Green-Tea-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Green Tea', 35, 1)">+</button>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/jaggerytea.jpg" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Jaggery Tea</h5>
+            <p class="price-tag">₹25</p>
+          <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Jaggery Tea', 25, -1)">-</button>
+        <span id="Jaggery-Tea-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Jaggery Tea', 25, 1)">+</button>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/masalatea.jpg" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Masala Tea</h5>
+            <p class="price-tag">₹20</p>
+         <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Masala Tea', 20, -1)">-</button>
+        <span id="Masala-Tea-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Masala Tea', 20, 1)">+</button>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/rosemilk.jpg" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Rose Milk</h5>
+            <p class="price-tag">₹90</p>
+          <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Rose Milk', 90, -1)">-</button>
+        <span id="Rose-Milk-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Rose Milk', 90, 1)">+</button>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/tea.jpg" class="card-img-top" alt="Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Tea</h5>
+            <p class="price-tag">₹15</p>
+          <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Tea', 15, -1)">-</button>
+        <span id="Tea-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Tea', 15, 1)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Snacks Section -->
+    <h2 class="section-title">Snacks</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/samosa.jpg" class="card-img-top" alt="Samosa">
+          <div class="card-body">
+            <h5 class="card-title">Samosa</h5>
+            <p class="price-tag">₹30</p>
+         <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Samosa', 30, -1)">-</button>
+        <span id="Samosa-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Samosa', 30, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/popcorn.jpg" class="card-img-top" alt="Pakora">
+          <div class="card-body">
+            <h5 class="card-title">Pop Corn</h5>
+            <p class="price-tag">₹25</p>
+           <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Pop Corn', 25, -1)">-</button>
+        <span id="Pop-Corn-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Pop Corn', 25, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/gulamjamun.jpg" class="card-img-top" alt="Pakora">
+          <div class="card-body">
+            <h5 class="card-title">Gulam Jamun</h5>
+            <p class="price-tag">₹30</p>
+          <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Gulam Jamun', 30, -1)">-</button>
+        <span id="Gulam-Jamun-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Gulam Jamun', 30, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/laddu.jpg" class="card-img-top" alt="Pakora">
+          <div class="card-body">
+            <h5 class="card-title">Laddu</h5>
+            <p class="price-tag">₹25</p>
+         <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Laddu', 25, -1)">-</button>
+        <span id="Laddu-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Laddu', 25, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/mirchi.jpg" class="card-img-top" alt="Pakora">
+          <div class="card-body">
+            <h5 class="card-title">Mirchi Bajji</h5>
+            <p class="price-tag">₹30</p>
+         <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Mirchi Bajji', 30, -1)">-</button>
+        <span id="Mirchi-Bajji-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Mirchi Bajji', 30, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/momos.jpg" class="card-img-top" alt="Pakora">
+          <div class="card-body">
+            <h5 class="card-title">Moms</h5>
+            <p class="price-tag">₹40</p>
+            <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Moms', 40, -1)">-</button>
+        <span id="Moms-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Moms', 40, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/balushashi.jpg" class="card-img-top" alt="Pakora">
+          <div class="card-body">
+            <h5 class="card-title">Balushashi</h5>
+            <p class="price-tag">₹25</p>
+            <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Balushashi', 25, -1)">-</button>
+        <span id="Balushashi-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Balushashi', 25, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/panipuri.jpg" class="card-img-top" alt="Pakora">
+          <div class="card-body">
+            <h5 class="card-title">Panipuri</h5>
+            <p class="price-tag">₹30</p>
+          <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Panipuri', 30, -1)">-</button>
+        <span id="Panipuri-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Panipuri', 30, 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="images/vadapav.jpg" class="card-img-top" alt="Pakora">
+          <div class="card-body">
+            <h5 class="card-title">Vadapav</h5>
+            <p class="price-tag">₹35</p>
+            <button class="btn btn-danger btn-sm me-2" onclick="updateCart('Vadapav', 35, -1)">-</button>
+        <span id="Vadapav-qty" class="me-2">0</span>
+        <button class="btn btn-success btn-sm me-auto" onclick="updateCart('Vadapav', 35,  1)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 style="margin-top: 15px;text-align: center;color: cadetblue;"> Cart-Items</h1>
+  <div class="cart mt-5 ms-5 border border-2 rounded-3 border-success m-4" id="cart">
+    <h4>🛒 Your Cart</h4>
+    <div id="cart-items"></div>
+    <div class="cart-total">Total: ₹<span id="total">0</span></div>
+    <a href="cart.html" class="btn btn-primary w-100 mt-4">Proceed to Pay</a>
+  </div>
+
+  <script>
+  const cart = {};
+
+  function sanitizeId(str) {
+    return str.replace(/\s+/g, '-');
+  }
+
+  function addToCart(itemName, price) {
+    const safeId = sanitizeId(itemName);
+    cart[itemName] = { qty: 1, price: price };
+
+    // Hide "Add to Cart", show +/-
+    document.getElementById(safeId + '-add').style.display = 'none';
+    document.getElementById(safeId + '-controls').style.display = 'flex';
+    document.getElementById(safeId + '-qty').innerText = 1;
+
+    renderCart();
+  }
+
+  function updateCart(itemName, price, change) {
+    const safeId = sanitizeId(itemName);
+
+    if (!cart[itemName]) {
+      cart[itemName] = { qty: 0, price: price };
+    }
+
+    cart[itemName].qty += change;
+
+    if (cart[itemName].qty <= 0) {
+      cart[itemName].qty = 0;
+      // Hide +/– and show Add to Cart again
+      document.getElementById(safeId + '-controls').style.display = 'none';
+      document.getElementById(safeId + '-add').style.display = 'block';
+    } else {
+      document.getElementById(safeId + '-qty').innerText = cart[itemName].qty;
+    }
+
+    renderCart();
+  }
+
+  function renderCart() {
+    const cartItemsDiv = document.getElementById('cart-items');
+    const totalSpan = document.getElementById('total');
+    cartItemsDiv.innerHTML = '';
+    let total = 0;
+
+    for (const item in cart) {
+      const { qty, price } = cart[item];
+      if (qty > 0) {
+        const itemTotal = qty * price;
+        total += itemTotal;
+
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `<span>${item} × ${qty}</span><span>₹${itemTotal}</span>`;
+        cartItemsDiv.appendChild(div);
+      }
+    }
+    localStorage.setItem("cartData", JSON.stringify(cart));
+localStorage.setItem("cartTotal", total); // ✅ This is important!
+
+
+    totalSpan.innerText = total;
+  }
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
