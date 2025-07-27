@@ -41,22 +41,25 @@
 
   <!-- JavaScript to Save Data -->
   <script>
-    document.getElementById("register-form").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value.trim();
+  document.getElementById("register-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Always prevent default form submission
 
-      if (localStorage.getItem(email)) {
-        alert("User already registered.");
-      } else {
-        localStorage.setItem(email, password);
-        alert("Registered successfully!");
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-        // Redirect after registration
-        window.location.href = "login.html"; // change this if your login page has another name
-      }
-    });
-  </script>
+    if (localStorage.getItem(email)) {
+      alert("⚠️ This email is already registered. Please login.");
+       window.location.href = "login.html";
+      // Do nothing else — stay on the same page
+    } else {
+      localStorage.setItem(email, password);
+      alert("✅ Registered successfully!");
+      // Redirect only if new
+      window.location.href = "login.html";
+    }
+  });
+</script>
+
 
 </body>
 </html>
