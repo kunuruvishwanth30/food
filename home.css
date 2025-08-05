@@ -9,9 +9,13 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+nav{
+  position: sticky;
+  top: 0px;
+}
 body {
   background: #fffefc;
+ 
 }
 
 /* Navbar Brand Styling */
@@ -20,6 +24,7 @@ body {
   align-items: center;
   gap: 10px;
   font-family: 'Playfair Display', serif;
+  
 }
 
 .navbar-brand i {
